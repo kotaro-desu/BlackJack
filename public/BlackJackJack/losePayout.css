@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+body {
+    background-image: url("translate.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#square {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: 2px solid white;
+    width: 500px;
+    height: 100px;
+    border-radius: 10px;
+
+    background-color: black;
+    opacity: 0.8;
+}
+
+#payout {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+}
+
+#text {
+    text-align: center;
+    color: white;
+}

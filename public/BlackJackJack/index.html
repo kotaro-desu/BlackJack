@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>ブラックジャック</title>
+<link href="sample.css" rel="stylesheet">
+</head>
+<body>
+  <div class="token">
+    <div id="myToken"></div>
+    <input type="number" min="1" required id="guessField" class="guessField">
+    <button id="btn">決定</button>
+    <button id = "payout">精算</button>
+    <div id="decLatch"></div>
+    <div id="test"></div>
+  </div>
+  <div class="container">
+    <table id="table">
+      <tr>
+        <td><img class="comCard" alt=""></td>
+        <td><img class="comCard" alt=""></td>
+        <td><img class="comCard" alt=""></td>
+        <td><img class="comCard" alt=""></td>
+        <td><img class="comCard" alt=""></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="pick">ヒット</button><br><button id="judge">スタンド</button></td>
+        <td>
+          <img id="cards" src="blue.png" alt="">
+          <div id="myTotal" class="total"></div>
+          <div id="comTotal" class="total"></div>
+        </td>
+        <td><button id="reset">もう一回遊ぶ</button></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><img class="myCard" alt=""></td>
+        <td><img class="myCard" alt=""></td>
+        <td><img class="myCard" alt=""></td>
+        <td><img class="myCard" alt=""></td>
+        <td><img class="myCard" alt=""></td>
+      </tr>
+    </table>
+    <div class="main vod">
+      <table id="result">
+        <tr>
+          <td id="topResult" colspan="5">結果</td>
+        </tr>
+        <tr>
+          <td id="time" class="sumResult">time</td>
+          <td id="userHaveMoney" class="sumResult">userHaveMoney</td>
+          <td id="latch" class="sumResult">latch</td>
+          <td id="rate" class="sumResult">rate</td>
+          <td id="fight" class="sumResult">fight</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src=  "sample.js"></script>
+
+</body>
+</html>

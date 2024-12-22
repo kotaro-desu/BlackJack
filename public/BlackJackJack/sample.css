@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+body {
+  background: url(board.png) no-repeat;
+  background-size: cover;
+}
+
+#table {
+  background: url(board.png) no-repeat;
+  width: 550px;
+  margin-top: 40px;
+  margin-left: 100px;
+  padding: 0 10px;
+}
+
+#table td {
+  position: relative;
+  text-align: center;
+}
+
+#table button {
+  width: 100%;
+}
+
+.total {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  border: 2px solid;
+  font-size: 30px;
+  width: 1.5em;
+  text-align: center;
+}
+
+#myTotal {
+  background-color: #0961a3;
+  bottom: 10px;
+}
+
+#comTotal {
+  background-color: #d53633;
+  top: 10px;
+}
+
+#dummy {
+  visibility:hidden;
+}
+
+.main {
+  display:flex;
+  column-gap: 0%;
+}
+
+.container {
+  display:flex;
+}
+
+#result {
+  margin-top: 0px;
+}
+
+.vod {
+  margin: 50px;
+  height: 0px;
+}
+
+#topResult {
+  width: 500px;
+  border: 1px solid #333;
+  text-align: center;
+}
+
+.sumResult {
+  text-align: center;
+}
